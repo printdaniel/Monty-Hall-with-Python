@@ -1,11 +1,9 @@
-from random import randint
 from random import choice
 
 n_simulaciones = int(input("Ingrese el número de simulaciones: "))
 
 victorias_count_s1 = 0
 victorias_count_s2 = 0
-
 
 for i in range (n_simulaciones):
     puertas = [1,2,3]
@@ -54,9 +52,7 @@ for i in range (n_simulaciones):
     if puerta_jugador_nueva == puerta_ganadora:
         victorias_count_s2 +=1
 
-
 print("Sin cambiar la elección")
 print(1.0 * victorias_count_s1/n_simulaciones)
-
 print("Cambiando la elección orginal")
 print (1.0 * victorias_count_s2/n_simulaciones)
